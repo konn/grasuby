@@ -1,7 +1,7 @@
 =begin
 = Grasuby -- Grass rUBY interpreter and his friends
 
-  ver 0.5b2 2008-08-27T12:17:46+09:00
+  ver 0.0.1b1 2008-09-15T02:20:51+09:00
   
   Copyright (c) 2008 Hiromi Ishii
   

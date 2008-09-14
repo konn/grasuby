@@ -1,7 +1,7 @@
 =begin
 = Grasuby -- Grass rUBY interpreter and his friends
 
-  ver 0.0.1b1 2008-09-15T02:20:51+09:00
+  ver 0.1b1 2008-09-15T02:20:51+09:00
   
   Copyright (c) 2008 Hiromi Ishii
   
@@ -9,8 +9,7 @@
 
 
 == What is this?
-Yet anoter grass interpreter that does not really work.
-10% of features are not implemented.
+Yet anoter grass interpreter that perhaps work.
 
 == Usage
 Result is written to the standard output.
@@ -55,4 +54,4 @@ Evaluate formal notation.
   w
 
 == Todo
-(1) Implement all the features.
+(1) Test.

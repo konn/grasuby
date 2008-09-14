@@ -15,8 +15,9 @@ def to_church(v)
   if Numeric === v
     return (v.to_i%256).chr.intern
   elsif v
-    return [:abs, 2]
+    return [[:abs, 1, []], [:abs, 2, [[:app, 3, 2]]]]
   else
+    return [[:abs, 1, []], [:abs, 2, [[:app, 3, 1]]]]
   end
 end
 
@@ -49,7 +50,8 @@ def trans(m)
       when :in
         b = $<.getc || arg
       when Symbol
-        b = to_church(b == arg)
+        rest = to_church(b == arg)
+        return Machine.new(rest, e, d)
       end
       return Machine.new(rest, e.unshift([b, e.map(&:dup)]), d)
     else
